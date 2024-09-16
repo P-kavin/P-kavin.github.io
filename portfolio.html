@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavin's portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="bg-image" id="home">
+        <nav class="navbar navbar-expand-xl top-navbar initial-navbar  fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand px-4" href="#home"><h4>Kavin's Portfolio</h4></a>
+                <button class="navbar-toggler initial-navbar" id="toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end w-auto " tabindex="-1" id="navbarNav" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" id="close-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#home" onclick="closeSideMenu()">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about" onclick="closeSideMenu()">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#skills" onclick="closeSideMenu()">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience" onclick="closeSideMenu()">Experience</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#projects" onclick="closeSideMenu()">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#achievements" onclick="closeSideMenu()">Achievements</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#footer" onclick="closeSideMenu()">Contact</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+        </nav>
+        <div class="content">
+            <img src="profileImage.jpg" class="rounded-circle img-fluid" width="200">
+            <h1>Hi, I am Kavin</h1>
+            <div class="rotating-text">
+                <div id="message1" class="message">Frontend Developer</div>
+                <div id="message2" class="message hidden">Android Application Developer</div>
+              </div>
+        </div>
+      </div>
+
+      <div id="about">
+        <h2>Kavin Prakasam</h2><br>
+        <h4>B.E - ECE at <a href="https://www.siet.ac.in/" target="_blank" id="college">Sri shakthi institute of engineering and technology,Coimbatore</a></h4><br>
+        <p>Innovative software developer with experience in designing, developing, and implementing software solutions to address complex business issues. Skilled in multiple programming languages and frameworks, with a strong ability to adapt to new technologies quickly. Demonstrated success in improving system performance and enhancing functionality through strategic updates and modifications. Committed. to collaborating closely with team members to achieve project goals and meet deadlines efficiently.</p>
+        <a class="btn btn-secondary mt-auto w-min-content" href="Kavin_resume.pdf" target="_blank" id ="my_resume">Get my resume</a>
+     </div>
+     
+     <div id="skills">
+      <h2 class="title">Skills</h2>
+      <div class="row g-3 justify-content-center" id="skillsRow">
+        <div class="col-sm-12 col-md-6 col-lg-4 web">
+          <div class="card align-items-center h-100">
+            <div class="image-container alter-image">
+              <img src="web_logo.jpg" class="card-img-top" alt="Card Image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Web Development</h5>
+              <p class="card-text">Capable of developing web paged with good UI using</p>
+              <div class="container mx-25">
+                <div class="row">
+                  <!-- First Item -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="border py-2 m-2 rounded"><h6 >Html</h6></div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6 ">
+                    <div class="border py-2 m-2 rounded"><h6 >Css</h6></div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="border py-2 m-2 rounded"><h6>JavaScript</h6></div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="border py-2 m-2 rounded"><h6>Bootstrap</h6></div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="border py-2 m-2 rounded"><h6>Java</h6></div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="border py-2 m-2 rounded"><h6>SQL</h6></div>
+        </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 android">
+          <div class="card align-items-center h-100">
+            <div class="image-container alter-image">
+              <img src="android_logo.png" class="card-img-top" alt="Card Image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">App Development</h5>
+              <p class="card-text">Capable of developing full scale andoid application using</p>
+              <div class="container mx-25">
+                <div class="row">
+                  <!-- First Item -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="border py-2 m-2 rounded"><h6 >Java</h6></div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="border py-2 m-2 rounded"><h6 >Kotlin</h6></div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="border py-2 m-2 rounded"><h6>Xml</h6></div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="border py-2 m-2 rounded"><h6>Retrofit</h6></div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="border py-2 m-2 rounded"><h6>Room db</h6></div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="border py-2 m-2 rounded"><h6>Mvvm</h6></div>
+        </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 tools">
+          <div class="card align-items-center h-100">
+            <div class="image-container alter-image">
+              <img src="tools_ide_logo.jpg" class="card-img-top" alt="Card Image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Tools & IDE</h5>
+              <p class="card-text">Worked with popular version control system and tools like</p>
+              <div class="container mx-25">
+                <div class="row">
+                  <!-- First Item -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="border py-2 m-2 rounded"><h6>Android Studio</h6></div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="border py-2 m-2 rounded"><h6 >Vs code</h6></div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="border py-2 m-2 rounded"><h6>Git Hub</h6></div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="border py-2 m-2 rounded"><h6>Bitbucket</h6></div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="border py-2 m-2 rounded"><h6>Postman</h6></div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="border py-2 m-2 rounded"><h6>Excel</h6></div>
+        </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div  id="experience">
+      <h2 class="title">Experience Timeline</h2>
+      <div class="timeline container align-items-center">
+          <div class="timeline-item container align-items-center">
+              <h4><a href="https://mallow-tech.com/" target="_blank" id="mallow-tech">Mallow Technologies</a></h4>
+              <h5>Android Developer Trainee</h5>
+              <p>September 2022 - December 2022</p>
+              <p>I have been trained by a senior developer from Malloe Tech on Android development, where I gained hands-on experience in building mobile applications. During the training, I learned Kotlin and explored the Android app lifecycle, which helped me understand how to manage app states, optimize performance, and create user-friendly interfaces.</p>
+            </div>
+  
+          <div class="timeline-item container align-items-center">
+            <h4><a href="https://mallow-tech.com/" target="_blank" id="mallow-tech">Mallow Technologies</a></h4>
+            <h5>Android Developer Intern</h5>
+              <p>February 2023 - May 2023</p>
+              <p>During my internship at Mallow Tech, I worked on a live project called Trygg, where I was actively involved in several critical areas. I contributed to UI design, ensuring a user-friendly and visually appealing interface. Additionally, I handled debugging and exception management, which involved identifying and fixing issues to improve app stability. I also worked on integrating location services, enhancing the app's functionality and user experience. Throughout my internship, I received a stipend of ₹15,000 per month, which supported my learning and development in the field of mobile application development.</p>
+          </div>
+  
+          <!-- Add more timeline items here -->
+      </div>
+    </div>uu
+
+    <div id="projects">
+      <h2 class="title">Projects</h2>
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-12 mb-3">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">News Application</h5>
+                <h6 class="project-type">Android Project</h6>
+                <p class="card-text flex-grow-1">I have built a News App in Android Studio using Kotlin, I have integrated a public API for news details. The app holds features like search, news type-based filtering, and alphabetical sorting options, along with a detailed view screen. Additionally, implemented a broadcast receiver for network status monitoring. Ensured seamless offline functionality with database integration.</p>
+                <div>
+                  <a href="https://github.com/P-kavin/Kavin-news-app" target="_blank" class="btn btn-primary btn-block">Get code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-6 col-md-12 mb-3 ">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Card Title 2</h5>
+                <p class="card-text flex-grow-1">yet to implement.</p>
+                <div >
+                <a href="#" class="btn btn-primary btn-block">Get code</a>
+              </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+  <div id="achievements">
+    <div  class="container">
+      <h2 class="title">Achievements</h2>
+      <div class="row justify-content-center">
+        <!-- Certification 1 -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card h-100 shadow d-flex flex-column animate-card equal-card">
+            <img src="hackerrank-logo.png" class="card-img-top h-25 w-25" alt="HackerRank Certificate">
+            <div class="card-body">
+              <h5 class="card-title">Java(Basic) - HackerRank</h5>
+              <p class="card-text">A certificate demonstrating java skills on HackerRank.</p>
+            </div>
+            <div class="card-footer">
+              <a href="https://www.hackerrank.com/certificates/iframe/a168ed883027" class="btn btn-primary btn-block" target="_blank">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <!--Certification 2 -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card h-100 shadow d-flex flex-column animate-card equal-card">
+            <img src="hackerrank-logo.png" class="card-img-top  h-25 w-25" alt="HackerRank Certificate">
+            <div class="card-body">
+              <h5 class="card-title">Problem Solving (Basic) - HackerRank</h5>
+              <p class="card-text">A certificate demonstrating problem-solving skills on HackerRank.</p>
+            </div>
+            <div class="card-footer">
+              <a href="https://www.hackerrank.com/certificates/iframe/6b2f55fb8ce7" class="btn btn-primary btn-block" target="_blank">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <!--Certification 3 -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card h-100 shadow d-flex flex-column animate-card equal-card">
+            <img src="hackerrank-logo.png" class="card-img-top h-25 w-25" alt="HackerRank Certificate">
+            <div class="card-body">
+              <h5 class="card-title">Sql (Advanced) - HackerRank</h5>
+              <p class="card-text">A certificate demonstrating Sql skills on HackerRank.</p>
+            </div>
+            <div class="card-footer">
+              <a href="https://www.hackerrank.com/certificates/iframe/e8d1a6f5473c" class="btn btn-primary btn-block" target="_blank">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <!--Certification 4 -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card h-100 shadow d-flex flex-column animate-card equal-card">
+           <img src="hackerrank-logo.png" class="card-img-top h-25 w-25" alt="HackerRank Certificate">
+           <div class="card-body">
+             <h5 class="card-title">Sql (Advanced) - HackerRank</h5>
+             <p class="card-text">A certificate demonstrating Sql skills on HackerRank.</p>
+           </div>
+           <div class="card-footer">
+             <a href="https://www.hackerrank.com/certificates/iframe/e8d1a6f5473c" class="btn btn-primary btn-block" target="_blank">View Certificate</a>
+           </div>
+         </div>
+       </div>
+        <!--Certification 5 -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card h-100 shadow d-flex flex-column animate-card equal-card">
+           <img src="bt_logo.jpg" class="card-img-top h-25 w-25" alt="HackerRank Certificate">
+           <div class="card-body">
+             <h5 class="card-title">Java Course - Besant Technologies</h5>
+             <p class="card-text">A certificate demonstrating completion of java course on Besant technologies.</p>
+           </div>
+           <div class="card-footer">
+             <a href="k" class="btn btn-primary btn-block" target="_blank">View Certificate</a>
+           </div>
+         </div>
+       </div>
+
+      </div>
+    </div>
+  </div>
+   
+  <!-- Footer -->
+<footer class="bg-dark text-light text-center py-4" id="footer">
+  <div class="container">
+    <!-- Contact Methods -->
+    <h5>Contact Me</h5>
+    <ul class="list-unstyled">
+      <li>Email: <a href="mailto:kavin7kavin7@gmail.com" class="text-light">kavin7kavin7@gmail.com</a></li>
+      <li>Phone: <a href="tel:+919597472319" class="text-light">+91 9597472319</a></li>
+    </ul>
+
+    <!-- Social Media Links -->
+    <div class="my-3">
+      <a href="https://www.linkedin.com/in/kavin-p-a5537a272" target="_blank" class="text-light mx-2">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/P-kavin" target="_blank" class="text-light mx-2">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://wa.me/9597472319" target="_blank" class="text-light mx-2">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="mb-0">&copy; 2024 KavinPrakasam All Rights Reserved.</p>
+  </div>
+</footer>
+
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="portfolio.js"></script>
+</body>
+
+</html>

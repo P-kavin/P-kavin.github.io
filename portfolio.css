@@ -1,0 +1,207 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    min-width: 320px;
+    font-weight: lighter;
+    scroll-padding-top: 70px;
+  }
+  .bg-image {
+    /* The image used */
+    background-image: url('Top-6-Software-Development-Methodologies.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+  }
+  .initial-navbar {
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+  }
+  .initial-navbar a:hover{
+    color: sandybrown;
+    transform: scale(1.1);
+  }
+ .initial-navbar a,.initial-navbar h5{
+    color: white;
+    transition: transform 0.4s ease-in-out;
+  }
+  .initial-navbar button{
+    filter: invert(100%);
+  }
+  .scrolled-navbar {
+    background-color: white; 
+    transition: background-color 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Bottom shadow */
+  }
+  .scrolled-navbar a:hover{
+    border-radius: 3px;
+    background-color:#0077cc ;
+    color: white;
+    transform: scale(1.1);
+  }
+  .scrolled-navbar a,.scrolled-navbar button,.scrolled-navbar h5{
+    color: black;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+  }
+  .scrolled-navbar button{
+    filter: invert(0%);
+  }
+  .rotating-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: fade 3s ease-out infinite;
+  }
+  @keyframes fade {
+    0% {
+        opacity: 1;
+      }
+    100% {
+      opacity: 0;
+    }
+  }
+  .hidden {
+    display: none;
+  }
+  p{
+    text-align: justify;
+  }
+  #college,#mallow-tech{
+    color: 0084ab;
+  text-decoration: none;
+  }
+  #college:hover,#mallow-tech:hover{
+    text-decoration: underline;
+  }
+  #skills,#about,#projects{
+    margin: 50px;
+    box-sizing: border-box;
+  }
+  #experience{
+    margin: 50px 0px;
+    box-sizing: border-box;
+  }
+
+  .card{
+    box-shadow: 0 4px 8px rgba(0.3, 0.3, 0.3, 0.3); /* Bottom shadow */
+  }
+
+  .alter-image {
+    width: 300px; /* Adjust the width to fit card width */
+    height: 200px; /* Fixed height for the images */
+    overflow: hidden; /* Ensures no overflow if the image size is larger */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .alter-image img {
+    width: 50%;
+    height: 75%;
+    object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
+  }
+  .small-img {
+    width: 50px; /* Adjust to make the image smaller */
+    height: 50px; /* Keep the image square */
+    object-fit: cover; 
+  }
+  .border{
+    text-align: center;
+    padding: 2px;
+    background-color: #e5e8eb;
+  }
+  #experience,#achievements{
+    background-color: #f4f6f9;
+  }
+  #experience{
+    padding: 60px;
+  }
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.timeline {
+    height: 100%;
+    border-left: 2px solid #0077cc;
+}
+.timeline-item {
+    width:80vw;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+    transition: transform 0.3s;
+}
+
+.timeline-item:hover {
+    transform: translateY(-10px);
+}
+
+.timeline-item:nth-child(odd) {
+    left: 55%;
+}
+
+.timeline-item:nth-child(even) {
+    left: 0;
+}
+
+.timeline-item h3 {
+    font-size: 1.8rem;
+    color: #0077cc;
+    margin-bottom: 10px;
+}
+
+.timeline-item h4 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.timeline-item p {
+    color: #555;
+}
+
+.project-type{
+  color: #0077cc;
+}
+
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Animation for cards */
+.animate-card {
+  animation: float 4s ease-in-out infinite;
+}
+
+#footer a{
+text-decoration: none;
+}
+ 
